@@ -15,10 +15,10 @@ spec:
     spec:
       containers:
         - name: web
-          image: kiamol/ch04-todo-list
+          image: tsouhaieb/todofix
           env:
-          - name: ASPNETCORE_ENVIRONMENT
-            value: Test
+            - name: ASPNETCORE_ENVIRONMENT
+              value: Test
           volumeMounts:
             - name: config
               mountPath: "/app/config"
@@ -31,12 +31,12 @@ spec:
           configMap:
             name: todo-web-config
             items:
-            - key: config.json
-              path: config.json
+              - key: config.json
+                path: config.json
         - name: secret
           secret:
             secretName: todo-web-secret
             defaultMode: 0400
             items:
-            - key: secrets.json
-              path: secrets.json
+              - key: secrets.json
+                path: secrets.json

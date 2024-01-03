@@ -2,4 +2,4 @@ version: "3.7"
 
 services:
   ch04-todo-list:
-    image: kiamol/ch04-todo-list:latest-linux-amd64
+    image: tsouhaieb/todofix:latest-linux-amd64

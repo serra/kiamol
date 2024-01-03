@@ -24,12 +24,12 @@ spec:
     spec:
       containers:
         - name: web
-          image: kiamol/ch04-todo-list
+          image: tsouhaieb/todofix
           env:
-          - name: Database__Provider
-            value: Sqlite
-          - name: ConnectionStrings__ToDoDb
-            value: "Filename=/data/todo-list-lab.db"
+            - name: Database__Provider
+              value: Sqlite
+            - name: ConnectionStrings__ToDoDb
+              value: "Filename=/data/todo-list-lab.db"
           volumeMounts:
             - name: data
               mountPath: /data

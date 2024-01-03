@@ -28,7 +28,7 @@ spec:
               readOnly: false
       containers:
         - name: web
-          image: kiamol/ch04-todo-list
+          image: tsouhaieb/todofix
           volumeMounts:
             - name: shared
               mountPath: "/app/config"

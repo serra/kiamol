@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: kiamol/ch04-todo-list
+          image: tsouhaieb/todofix
           env:
           - name: ASPNETCORE_ENVIRONMENT
             value: {{ .Values.environment | title }}

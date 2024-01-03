@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: kiamol/ch04-todo-list
+          image: tsouhaieb/todofix
           volumeMounts:
             - name: config
               mountPath: "/app/config"
@@ -23,5 +23,5 @@ spec:
           configMap:
             name: todo-web-config-dev
             items:
-            - key: config.json
-              path: config.json
+              - key: config.json
+                path: config.json

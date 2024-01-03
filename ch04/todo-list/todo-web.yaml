@@ -25,7 +25,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: kiamol/ch04-todo-list
+          image: tsouhaieb/todofix
           env:
           - name: Logging__LogLevel__Default
             value: Warning

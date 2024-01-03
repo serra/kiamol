@@ -25,7 +25,7 @@ kubectl get pods -o custom-columns=NAME:metadata.name
 > whoami-1-549786dc89-dps2x
 
 ```bash
-kubectl exec deploy/whoami-1 -- sh -c 'hostname'
+kubectl exec deploy/whoami -- sh -c 'hostname'
 ```
 
 > whoami-1-549786dc89-dps2x

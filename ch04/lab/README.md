@@ -4,7 +4,6 @@
 
 Configure a k8s cluster for "adminer", a web application for adminstering databases.
 
-
 ## Tests
 
 We can browse the web app.

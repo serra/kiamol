@@ -71,7 +71,11 @@ spec:
             - name: config
               mountPath: "/etc/nginx/"
               readOnly: true
+            - name: cache-volume
+              mountPath: /data/nginx/cache
       volumes:
         - name: config
           configMap:
             name: todo-proxy-lab-configmap
+        - name: cache-volume
+          emptyDir: {}

@@ -4,13 +4,13 @@
 
 ## Tests
 
-Can run app
+✅ Can run app
 
 Can add and retrieve data
 
+Cache persists after deleting pods
+
 Data persists after deleting pods
-
-
 
 ## Steps
 
@@ -29,7 +29,12 @@ Configure storage for proxy cache files and database. Check pod spec and log ent
     nginx: [emerg] mkdir() "/data/nginx/cache" failed (2: No such file or directory)
 
 On the proxy pod, the directory `/data/nginx/cache` is missing.
+Solution add a cache volume backed by an `emptyDir`: 43df080e5603df242b46f51bc89f277e678f1dbe
 
-
+There seems to be sth wrong with the todo app again, since it does not seem to sue the appsettings correctly (it creates a database in the application root instead of the designated location).
 
 ## Learnings
+
+Sadly, the exercise with the todo list app fails again, i will not do any more exercises with it.
+
+Applying the manifests from the solution file did not work either,
